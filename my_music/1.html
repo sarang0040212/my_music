@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cosmetics</title>
+    <style>
+        body{
+            background-color: black;
+        }
+            .container {
+                margin: 0;
+                box-sizing: border-box;
+                display: grid;
+                grid-template-columns: 80% 20%;
+                grid-template-rows: 100px 130px 650px;
+                grid-template-areas: 
+                'header header'
+                'nav_2 nav_2'
+                'nav article'
+                'footer article'
+                ;
+            }
+            .header {
+                grid-area: header;
+
+            }
+
+            .header h1 {
+                margin: 0px;
+                font-family: 'Merriweather', serif;
+                text-align: center;
+                font-size: 40px;
+                line-height: 100px;
+                border-bottom: 4px solid rgb(255, 255, 255);
+                background: none;
+            }
+
+            .header a:link {
+                text-decoration:none;
+                font-family: 'Merriweather', serif;
+                color: gray;
+            }
+            .header a:visited {
+                text-decoration:none;
+                font-family: 'Merriweather', serif;
+                color: gray;
+            }
+            .header a:active {
+                text-decoration:none;
+                font-family: 'Merriweather', serif;
+                color: gray;
+            }
+            .header a:hover {
+                text-decoration:none;
+                font-family: 'Merriweather', serif;
+                color: rgb(255, 255, 255);
+            }
+
+            .nav_2 {
+                grid-area: nav_2;
+                border-bottom: 4px solid rgb(255, 255, 255);
+                background: none;
+            }
+
+            .nav { 
+                margin-left: 150px;
+                grid-area: nav;
+                background: none;
+            }
+
+            .article {
+                grid-area: article;
+                padding-top: 200px;
+                margin-left: 60px;
+                background: none;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item header"><h1><a href="none.html" target="f3">노래 추천목록들~</a></h1></div>
+
+        <div class="item nav_2"><p align="center"><iframe src="none_2.html" width="1800" height="100" name="f4" frameborder=0 framespacing=0
+            marginheight=0 marginwidth=0 scrolling=no vspace=0>nav</iframe></p></div>
+
+        <div class="item nav"><iframe src="none.html" width="1300" height="700" name="f3" frameborder=0 framespacing=0
+            marginheight=0 marginwidth=0 scrolling=no vspace=0>nav</iframe></div>
+
+        <div class="item article"><iframe src="nav.html" height="500" frameborder=0 framespacing=0 
+            marginheight=0 marginwidth=0 scrolling=no vspace=0>Nodejs</iframe></div>
+    </div>
+</body>
+</html>
